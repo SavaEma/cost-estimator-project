@@ -41,12 +41,12 @@ h1 {
 }
 
 .tabs p:hover {
-  color: rgb(83, 49, 176);
+  color: rgb(83, 49, 156);
   cursor: pointer;
 }
 
 .tabs p.active {
-  color: rgb(83, 49, 176);
+  color: rgb(83, 49, 156);
   position: relative;
 }
 
@@ -68,4 +68,39 @@ h1 {
   left: -50%;
   z-index: 2;
   border-radius: 10px;
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-wrapper img {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toggle {
+  background-color: rgb(83, 49, 156);
+  height: 32px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 4px 0 16px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.toggle span:first-of-type {
+  color: white;
+}
+
+.toggle span:last-of-type {
+  color: rgb(83, 49, 156);
+  background-color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
 }
