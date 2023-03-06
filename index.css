@@ -310,6 +310,10 @@ h1 {
     display: none;
   }
 
+  .toggle span:last-of-type {
+    margin-left: 5px;
+  }
+
   .sessions-card {
     width: 80%;
   }
