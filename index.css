@@ -114,6 +114,7 @@ h1 {
   width: 50%;
   border-radius: 10px;
   margin: 16px 0;
+  box-sizing: border-box;
 }
 .sessions-card p {
   color: rgb(44, 44, 44);
@@ -268,4 +269,53 @@ h1 {
   left: 0;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+
+  .cards-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+  h1 {
+    margin: 0 0 16px 0;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .cards-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+  .container {
+    padding: 0 16px;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabs .active::before {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .sessions-card {
+    width: 80%;
+  }
+
+  .toggle-wrapper {
+    width: 80%;
+    justify-content: space-around;
+  }
 }
